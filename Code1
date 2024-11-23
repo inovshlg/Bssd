@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom BSOD</title>
+  <style>
+    body {
+      background-color: #0000AA;
+      color: white;
+      font-family: Consolas, monospace;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div id="bsod">
+    <h1>BLUE SCREEN OF DEATH</h1>
+    <p>A problem has been detected and Windows has been shut down.</p>
+    <p>Technical Information:</p>
+    <p>STOP CODE: [Insert Custom Message Here]</p>
+  </div>
+
+  <script>
+    document.getElementById('bsod').innerHTML += `
+      <p>Custom Error Message: Your Friend’s PC Has Crashed! 😜</p>
+    `;
+  </script>
+</body>
+</html>
